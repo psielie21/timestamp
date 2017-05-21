@@ -1,7 +1,10 @@
 var express = require("express")
 var path = require("path")
 
+var port = process.env.PORT || 8080;
+
 var app = express();
+
 
 function handleParams(params, callback){
     //first remove the "/" that comes with all the paths
@@ -27,4 +30,4 @@ app.get("*", function(req,res){
     })
 });
 
-app.listen(8080);
+app.listen(port);
