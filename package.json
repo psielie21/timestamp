@@ -10,5 +10,8 @@
   },
   "scripts": {
   "start": "node timestamp.js"
-}
+  },
+"engines": {
+    "node": "6.11.1"
+  }
 }
